@@ -1,40 +1,31 @@
-# Slint Rust Template
+# aes-gui
 
-A template for a Rust application that's using [Slint](https://slint.rs) for the user interface.
+A tool for encrypting and decrypting text securely with a graphical user interface.
 
 ## About
 
-This template helps you get started developing a Rust application with Slint as toolkit
-for the user interface. It demonstrates the integration between the `.slint` UI markup and
-Rust code, how to trigger react to callbacks, get and set properties and use basic widgets.
+This tool allows an input text to be encrypted or decrypted using password based encryption. This is done by using PBKDF2 to derive a unique AES256 key from the master password for each encrypted message.
 
-## Usage
+## Installation (Windows)
+To install passman on windows, just download the passman.exe file from the [Releases](https://github.com/removingnest109/aes-gui/releases) page.
 
-1. Install Rust by following the [Rust Getting Started Guide](https://www.rust-lang.org/learn/get-started).
-   Once this is done, you should have the ```rustc``` compiler and the ```cargo``` build system installed in your path.
-2. Install [`cargo-generate`](https://github.com/cargo-generate/cargo-generate)
-    ```
-    cargo install cargo-generate
-    ```
-3. Set up a sample project with this template
-    ```
-    cargo generate --git https://github.com/slint-ui/slint-rust-template --name my-project
-    cd my-project
-    ```
-3. Build with cargo
-    ```
-    cargo build
-    ```
-4. Run the application binary
-     ```
-     cargo run
-     ```
+The program is a standalone .exe and can be placed anywhere on the system without issues.
 
-We recommend using an IDE for development, along with our [LSP-based IDE integration for `.slint` files](https://github.com/slint-ui/slint/blob/master/tools/lsp/README.md). You can also load this project directly in [Visual Studio Code](https://code.visualstudio.com) and install our [Slint extension](https://marketplace.visualstudio.com/items?itemName=Slint.slint).
+## Installation (Linux)
+Executables can be found on the [Releases](https://github.com/removingnest109/aes-gui/releases) page.
 
-## Next Steps
+To install the executable binary on linux, download and extract the aes-gui_x86_64-linux.tar.gz.
 
-We hope that this template helps you get started and you enjoy exploring making user interfaces with Slint. To learn more
-about the Slint APIs and the `.slint` markup language check out our [online documentation](https://slint.dev/docs).
+This archive contains a binary file that can be placed anywhere in the system, but it is best to place it somewhere that is included in your $PATH.
 
-Don't forget to edit this README to replace it by yours
+Alternatively, if you have Cargo installed, you can also build aes-gui from source:
+
+```bash
+git clone https://github.com/removingnest109/aes-gui.git
+
+cd aes-gui
+
+cargo install --path .
+```
+
+If you build the program using "cargo install" on linux, it will place the executable in ~/.cargo/bin/
