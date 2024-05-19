@@ -157,12 +157,14 @@ dependencies = [
  "base64 0.13.1",
  "dirs",
  "generic-array",
+ "getrandom",
  "hmac",
  "pbkdf2",
  "rand",
  "sha2",
  "slint",
  "slint-build",
+ "wasm-bindgen",
 ]
 
 [[package]]
@@ -1655,8 +1657,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c4567c8db10ae91089c99af84c68c38da3ec2f087c3f82960bcdbf3656b6f4d7"
 dependencies = [
  "cfg-if",
+ "js-sys",
  "libc",
  "wasi",
+ "wasm-bindgen",
 ]
 
 [[package]]

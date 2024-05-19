@@ -86,6 +86,8 @@ slint::slint! {
 mod pbkdf2_aes;
 use pbkdf2_aes::{encrypt, decrypt};
 
+#[cfg_attr(target_arch = "wasm32",
+           wasm_bindgen::prelude::wasm_bindgen(start))]
 fn main() {
     match App::new() {
         Ok(app) => {
