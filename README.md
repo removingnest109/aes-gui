@@ -7,7 +7,7 @@ A tool for encrypting and decrypting text securely with a graphical user interfa
 This tool allows an input text to be encrypted or decrypted using password based encryption. This is done by using PBKDF2 to derive a unique AES256 key from the master password for each encrypted message.
 
 ## Installation (Windows)
-To install passman on windows, just download the passman.exe file from the [Releases](https://github.com/removingnest109/aes-gui/releases) page.
+To install passman on windows, just download the aes-gui.exe file from the [Releases](https://github.com/removingnest109/aes-gui/releases) page.
 
 The program is a standalone .exe and can be placed anywhere on the system without issues.
 
