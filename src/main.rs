@@ -19,8 +19,8 @@ slint::slint! {
 	callback decrypt <=> Logic.decrypt;
 	
 	title: "Aes text encryption";
-	width: 600px;
-	height: 800px;
+	min-width: 600px;
+	min-height: 800px;
 	
 	GridBox {
 	    spacing: 5px;
