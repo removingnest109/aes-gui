@@ -1,6 +1,6 @@
 [package]
 name = "aes-gui"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Ethan Saenger <ethan@saenger5.com>"]
 edition = "2021"
 build = "build.rs"
