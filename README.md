@@ -2,7 +2,7 @@
 
 A tool for encrypting and decrypting text securely with a graphical user interface.
 
-Uses Rust compiled to WASM for the encryption logic, and slint for ui framework
+Uses Rust for the encryption logic, and slint for ui framework
 
 ## About
 
