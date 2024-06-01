@@ -4,6 +4,8 @@ A tool for encrypting and decrypting text securely with a graphical user interfa
 
 Uses Rust for the encryption logic, and slint for ui framework
 
+Wasm bindings are already setup to compile for web, see "Compile for web" below for more info
+
 ## About
 
 This tool allows an input text to be encrypted or decrypted using password based encryption. This is done by using PBKDF2 to derive a unique AES256 key from the master password for each encrypted message.
@@ -31,3 +33,28 @@ cargo install --path .
 ```
 
 If you build the program using "cargo install" on linux, it will place the executable in ~/.cargo/bin/
+
+## Compile for web
+aes-gui can be compiled into a frontend only webapp and hosted on github pages or similar services
+
+You will need to have wasm-pack installed to compile for web:
+```bash
+cargo install wasm-pack
+```
+
+Then the target can be built. 
+```bash
+git clone https://github.com/removingnest109/aes-gui.git
+
+cd aes-gui
+
+wasm-pack build --target web
+```
+
+This builds to ./pkg/
+
+To host this web app, the index.html file and pkg folder must be in the same directory, then the directory can be added to github pages or hosted using a basic http server
+
+```bash
+python3 -m http.server 8000
+```
