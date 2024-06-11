@@ -4,7 +4,7 @@ A tool for encrypting and decrypting text securely with a graphical user interfa
 
 Uses Rust for the encryption logic, and slint for ui framework
 
-Wasm bindings are already setup, see "Compile for web" below for more info
+Wasm bindings are already setup, see "[Compile for web](compile-for-web)" below for more info
 
 ## About
 
